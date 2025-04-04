@@ -39,3 +39,6 @@ https://www.figma.com/design/qQ2irMQLhjJKJtxO0jM6xe/Untitled?node-id=3-283&t=fwt
 
 ![image](https://github.com/user-attachments/assets/bf8adce1-4201-4897-b599-fa9374132103)
 
+Database Schema
+
+![image](assets\Flowcharts.jpeg)
