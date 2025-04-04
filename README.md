@@ -29,3 +29,13 @@ Below is the flowchart representing the project workflow:
 1. Clone the repository.
 2. Install dependencies.
 3. Run the application using the provided instructions.
+
+
+
+
+![image](https://github.com/user-attachments/assets/18eae04b-aa1f-4536-9e51-41b5d5952345)
+
+![image](https://github.com/user-attachments/assets/db311ed3-cf4f-4895-96e9-80117ea6e210)
+
+![image](https://github.com/user-attachments/assets/bf8adce1-4201-4897-b599-fa9374132103)
+
