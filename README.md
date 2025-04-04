@@ -30,7 +30,7 @@ Below is the flowchart representing the project workflow:
 2. Install dependencies.
 3. Run the application using the provided instructions.
 
-
+https://www.figma.com/design/qQ2irMQLhjJKJtxO0jM6xe/Untitled?node-id=3-283&t=fwtgbZpLsKM2q2oG-1
 
 
 ![image](https://github.com/user-attachments/assets/18eae04b-aa1f-4536-9e51-41b5d5952345)
