@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Data API</title>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    textarea { width:100%; height:100px; }
+    pre { background:#f4f4f4; padding:10px; }
+  </style>
+</head>
+<body>
+  <h1>Test Data API</h1>
+  <section>
+    <h2>POST /data</h2>
+    <textarea id="postData">{ "name": "Alice", "age": 30 }</textarea><br>
+    <button onclick="postData()">Send POST</button>
+    <pre id="postResponse"></pre>
+  </section>
+  <section>
+    <h2>GET /data</h2>
+    <button onclick="getData()">Fetch Data</button>
+    <pre id="getResponse"></pre>
+  </section>
+
+  <script>
+    function postData() {
+      let txt = document.getElementById('postData').value;
+      let obj;
+      try { obj = JSON.parse(txt); }
+      catch(e){ return document.getElementById('postResponse').textContent='Invalid JSON'; }
+      fetch('/data',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify(obj)
+      })
+      .then(r=>r.json())
+      .then(js=>document.getElementById('postResponse').textContent=JSON.stringify(js,null,2))
+      .catch(e=>document.getElementById('postResponse').textContent=e);
+    }
+    function getData() {
+      fetch('/data')
+        .then(r=>r.json())
+        .then(js=>document.getElementById('getResponse').textContent=JSON.stringify(js,null,2))
+        .catch(e=>document.getElementById('getResponse').textContent=e);
+    }
+  </script>
+</body>
+</html>
